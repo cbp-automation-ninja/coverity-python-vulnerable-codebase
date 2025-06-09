@@ -14,7 +14,7 @@ permissions:
   scm-token-org: read
   id-token: write
 jobs:
-  blackduck-hybrid-scan:
+  coverity-scan:
     steps:
       - name: checkout Source Code
         uses: cloudbees-io/checkout@v1
