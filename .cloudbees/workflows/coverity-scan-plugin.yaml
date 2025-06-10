@@ -21,7 +21,7 @@ jobs:
         with:
             repository: cbp-automation-ninja/coverity-python-vulnerable-codebase
       - name: Scan with Coverity on Polaris
-        uses: https://github.com/cloudbees-io/coverity-polaris-sast-scan-code@v1
+        uses: https://github.com/cloudbees-io/coverity-polaris-sast-scan-code/releases/tag/v2
         with:
           server-url: ${{ vars.COVERITY_POLARIS_SERVER_URL }}
           api-token: ${{ secrets.COVERITY_POLARIS_TOKEN }}
